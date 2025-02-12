@@ -1,0 +1,60 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text for contrast */
+}
+/* About Me Section */
+#about {
+    padding: 2em;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+/* Projects Section */
+#projects {
+    padding: 2em;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+/* Contact Section */
+#contact {
+    padding: 2em;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000; /* Black background */
+    padding: 1em;
+}
+
+nav .logo a {
+    color: #fff; /* White text */
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+nav .menu li a {
+    color: #fff; /* White text */
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
