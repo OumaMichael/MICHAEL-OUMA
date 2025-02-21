@@ -271,7 +271,7 @@
         <h3>Work Experience</h3>
         <div class="job">
           <h4>Data Analyst Consultant at Dalberg Research</h4>
-          <p><em>Apr 2021 - Present, Westlands, Kenya</em></p>
+          <p><em>Apr 2021 - Present, Two Rivers North Tower Lifestyle centre, Kenya</em></p>
           <ul>
             <li>Ensured the accuracy, completeness, and consistency of datasets by conducting thorough checks across various stages of the data lifecycle.</li>
             <li>Performed advanced data cleaning and statistical analysis using SPSS, R, Excel, and STATA to generate actionable insights.</li>
@@ -373,7 +373,7 @@
           <li>
             <strong>Mr. Okuda Pascal</strong><br>
             Senior Data Analyst, Dalberg Research Institute<br>
-            28 Whitefield Place, School Lane, Westlands<br>
+            Two Rivers North Tower Lifestyle centre, Limuru Rd, Nairobi<br>
             Tel: 0719 716363<br>
             E-mail: <a href="mailto:anderapascal@gmail.com">anderapascal@gmail.com</a>
           </li>
