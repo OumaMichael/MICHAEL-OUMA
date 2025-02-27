@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -18,6 +18,7 @@
       background: #121212;
       color: #fff;
       line-height: 1.6;
+      font-size: 18px; /* Increased base font size */
     }
     a {
       color: #1E90FF;
@@ -27,6 +28,7 @@
     a:hover {
       color: #63b3ed;
     }
+    
     /* Navigation Bar */
     nav {
       background: #1a1a1a;
@@ -39,8 +41,8 @@
       z-index: 100;
     }
     nav .logo a {
-      font-size: 1.5rem;
-      font-weight: 600;
+      font-size: 2rem; /* Increased for readability */
+      font-weight: 2000;
     }
     nav ul {
       list-style: none;
@@ -48,47 +50,97 @@
       gap: 1.5rem;
     }
     nav ul li a {
-      font-weight: 400;
+      font-weight: 800;
+      font-size: 1.2rem;
     }
-    /* Hero Section */
+    
+    /* Hero Section with Rain & Lightning Background */
     #home {
+      position: relative;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 100px 20px;
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-                  url('https://source.unsplash.com/1600x900/?technology') no-repeat center center/cover;
+      padding: 120px 20px;
+      /* Replace the technology image with your rain background */
+      background: url('rain.402ac1f303abf9762d5a.png') no-repeat center center/cover;
       min-height: 100vh;
+      z-index: 0;
+    }
+    #home::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      /* Lightning overlay image */
+      background: url('lightining.3503a307e703e460c6ce.png') no-repeat center center/cover;
+      opacity: 0;
+      animation: lightning 8s linear infinite;
+      z-index: 1;
+    }
+    @keyframes lightning {
+      0%, 20%, 100% {
+        opacity: 0;
+      }
+      21%, 23%, 24%, 40% {
+        opacity: 1;
+      }
     }
     #home h1 {
-      font-size: 3rem;
+      position: relative;
+      z-index: 2;
+      font-size: 4rem; /* Increased font size */
       margin-bottom: 0.5rem;
     }
     #home p {
-      font-size: 1.2rem;
+      position: relative;
+      z-index: 2;
+      font-size: 1.5rem; /* Increased font size */
       margin-bottom: 1rem;
     }
+    
+    /* Button Styling */
+    .btn {
+      position: relative;
+      z-index: 2;
+      display: inline-block;
+      background: #007BFF; /* Strong blue color */
+      color: #fff;
+      padding: 1rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 1.2rem;
+      transition: background 0.3s ease;
+      margin-top: 1rem;
+    }
+    .btn:hover {
+      background: #3399FF;
+    }
+    
     /* Sections */
     section {
       padding: 4rem 2rem;
     }
     section h2 {
-      font-size: 2.5rem;
+      font-size: 3rem; /* Increased font size */
       margin-bottom: 1.5rem;
       text-align: center;
     }
     section h3 {
-      font-size: 1.8rem;
+      font-size: 2rem; /* Increased font size */
       margin: 1.5rem 0 1rem;
     }
     section p {
       max-width: 800px;
       margin: 0 auto 1rem;
       text-align: center;
-      font-size: 1rem;
+      font-size: 1.2rem; /* Increased font size */
     }
+    
     /* Mission Section (replaces About Me) */
     #about .about-content {
       display: flex;
@@ -103,12 +155,14 @@
     #about .about-text {
       max-width: 800px;
     }
+    
     /* Projects Section */
     #projects ul {
       max-width: 800px;
       margin: 2rem auto;
       list-style: none;
       padding: 0;
+      font-size: 1.2rem; /* Increased font size */
     }
     #projects li {
       background: #1e1e1e;
@@ -120,6 +174,7 @@
     #projects li:hover {
       transform: translateY(-5px);
     }
+    
     /* Project Gallery */
     .project-gallery {
       display: grid;
@@ -131,6 +186,7 @@
       width: 100%;
       border-radius: 8px;
     }
+    
     /* Resume Section */
     #resume {
       background: #1a1a1a;
@@ -145,10 +201,12 @@
       list-style-type: disc;
       margin-left: 2rem;
       margin-bottom: 1rem;
+      font-size: 1.2rem;
     }
     #resume li {
       margin-bottom: 0.5rem;
     }
+    
     /* Services Section */
     #services .service-content {
       max-width: 900px;
@@ -156,9 +214,10 @@
       display: flex;
       flex-direction: column;
       gap: 2rem;
+      font-size: 1.2rem;
     }
     #services .service-item {
-      background: #1e1e1e;
+      background: #1a1a1a;
       padding: 1.5rem;
       border-radius: 8px;
     }
@@ -170,18 +229,35 @@
       text-align: left;
       margin-bottom: 0.5rem;
     }
+    
     /* Contact Section */
     #contact p {
       text-align: center;
       margin: 0.5rem 0;
+      font-size: 1.2rem;
     }
+    
+    /* Social Links under Contact */
+    .social-links {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .social-links a {
+      margin: 0 0.5rem;
+    }
+    .social-links img {
+      width: 40px;
+      height: 40px;
+    }
+    
     /* Footer */
     footer {
       background: #1a1a1a;
       text-align: center;
       padding: 1rem;
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
+    
     /* Responsive Adjustments */
     @media (max-width: 768px) {
       nav {
@@ -192,7 +268,7 @@
         gap: 1rem;
       }
       #home h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
       }
       #about .about-content,
       #services .service-content {
@@ -214,13 +290,14 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-
-  <!-- Hero Section -->
+  
+  <!-- Hero Section with Download CV Button -->
   <section id="home">
     <h1>I'm Michael Ouma</h1>
     <p>Data Analyst | Statistician | Researcher</p>
+    <a href="./CV1_4.pdf" download class="btn">Download CV</a>
   </section>
-
+  
   <!-- Mission Section (replaces About Me) -->
   <section id="about">
     <h2>Mission</h2>
@@ -235,7 +312,7 @@
       </div>
     </div>
   </section>
-
+  
   <!-- Projects Section -->
   <section id="projects">
     <h2>Projects</h2>
@@ -258,10 +335,9 @@
       <img src="output10.png" alt="Project Output 10">
       <img src="output11.png" alt="Project Output 11">
       <img src="output12.png" alt="Project Output 12">
-
     </div>
   </section>
-
+  
   <!-- Resume Section -->
   <section id="resume">
     <div class="section-content">
@@ -385,11 +461,10 @@
           </li>
         </ul>
       </div>
-      
     </div>
   </section>
-
-  <!-- Services Section (moved after Resume) -->
+  
+  <!-- Services Section -->
   <section id="services">
     <h2>Services</h2>
     <div class="service-content">
@@ -417,19 +492,29 @@
       </div>
     </div>
   </section>
-
+  
   <!-- Contact Section -->
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:oumamichael108@gmail.com">oumamichael108@gmail.com</a></p>
     <p>Phone: +254-759125389</p>
     <p>Location: Nairobi, Kenya</p>
+    <!-- Social Links -->
+    <div class="social-links">
+      <a href="mailto:oumamichael108@gmail.com" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+      </a>
+      <a href="https://ke.linkedin.com/in/michael-ouma-03b3522a1?trk=people-guest_people_search-card&original_referer=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/OumaMichael" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+      </a>  
+    </div>
   </section>
-
+  
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 Michael Ouma. All rights reserved.</p>
   </footer>
 </body>
 </html>
-
