@@ -515,5 +515,6 @@
   <footer>
     <p>&copy; 2025 Michael Ouma. All rights reserved.</p>
   </footer>
+  <script src="index.js"></script>
 </body>
 </html>
