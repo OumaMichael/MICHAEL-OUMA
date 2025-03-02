@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -499,6 +500,11 @@
     <p>Location: Nairobi, Kenya</p>
     <!-- Social Links -->
     <div class="social-links">
+      <!-- Phone Button -->
+      <a href="tel:+254759125389" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone">
+      </a>
+      <!-- Email Logo -->
       <a href="mailto:oumamichael108@gmail.com" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
       </a>
